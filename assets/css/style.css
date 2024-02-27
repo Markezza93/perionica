@@ -1,0 +1,569 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+* {
+    font-family: 'Kanit', sans-serif;
+    margin: 0px;
+    padding: 0px;
+    list-style-type: none;
+    text-decoration: none;
+    scroll-behavior: smooth;
+    box-sizing: border-box;
+}
+
+.konteiner {
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.drugi-konteiner {
+    width: 65%;
+    margin: 0 auto;
+}
+                               /* NAVIGACIJA */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2C3234;
+    position: fixed;
+    width: 100%;
+    box-shadow: 7px 7px 12px rgba(0, 0, 0, 0.4);
+    z-index: 999;
+}
+
+#logo a {
+    font-size: 38px;
+    color: white;
+    letter-spacing: 2px;
+}
+
+#logo {
+    padding-top: 12px;
+    padding-bottom: 12px;
+}
+
+#logoUnderline {
+    width: 50px;
+    height: 3px;
+    background-color: #E7772E;
+    position: relative;
+    top: -5px;
+}
+
+
+
+nav ul {
+    display: flex;
+    position: relative;
+    left: 38px; 
+    top: 10px;
+}
+
+    nav ul li {
+        margin-right: 38px;
+        font-size: 15px;
+        font-weight: 500;
+        text-transform: uppercase;
+    }
+
+        nav ul li:after {
+            content: '';
+            width: 0%;
+            height: 2px;
+            background: #E7772E;
+            display: block;
+            margin: auto;
+            transition: 0.4s;
+        }
+
+        nav ul li:hover::after {
+            width: 100%;
+        }
+
+        nav ul li a {
+            color: white;
+        }
+
+.nav-link {
+    letter-spacing: 1px;
+    color: white;
+}
+
+
+                            /* Header */
+#header-sekcija {
+    background-image: linear-gradient(rgba(0,0,0,0.7), transparent),url(../img/bg4.jpg);
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    display: flex;
+    align-items: center;
+}
+
+#header-sadrzaj {
+    position: relative;
+    top: -20px;
+    animation-name: levo;
+    animation-duration: 1.5s;
+}
+
+h1 {
+    font-size: 50px;
+    color: white;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+#slogan {
+    font-size: 25px;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.button {
+    background-color: #E7772E;
+    display: inline-block;
+    padding: 6px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+    .button a {
+        color: white;
+    }
+
+    .button:hover {
+        background-color: #2C3234;
+        border: 1px solid #E7772E;
+        padding: 6px 30px;
+        animation:grow  ;
+    }
+                                  /* O nama */
+
+#o-nama {
+    background-color: #2C3234;
+}
+
+.blok-o-nama {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.naslov-o-nama {
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+.underline {
+    height: 3px;
+    background-color: #E7772E;
+    width: 70px;
+}
+
+#sekcija-o-nama {
+    margin-top: 100px;
+    display: flex;
+    justify-content: space-between;
+    gap: 200px;
+    padding-bottom: 100px;
+    overflow: hidden;
+}
+
+.o-nama {
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    animation-name: desno;
+    animation-duration: 5s;
+}
+
+    .o-nama:first-child {
+        animation-name: levo;
+        animation-duration: 5s;
+    }
+
+    .o-nama a {
+        color: white;
+    }
+
+    .o-nama h3 {
+        font-size: 27px;
+        letter-spacing: 1px;
+        margin-bottom: 10px;
+        margin-top: 10px;
+    }
+
+.button2 {
+    background-color: #E7772E;
+    padding: 6px 20px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    margin-top: 10px;
+    display: inline-block;
+    position:relative;
+    top:-10px;
+}
+
+                             /* Nas rad */
+
+.naslov-nas-rad{
+    color: white;
+    text-transform: uppercase;
+    font-size: 35px;
+    margin-top: 30px;
+    margin-bottom: 5px;
+}
+
+#nas-rad {
+    background-color: #2C3234;
+}
+.blok-nas-rad{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+#blok-radovi {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 100px;
+    width: 100%;
+}
+
+.radovi {
+    position: relative;
+    top: 0;
+    left: 0;
+    z-index: 5;
+    margin-bottom: 30px;
+    overflow: hidden;
+    border-radius: 5px;
+}
+
+    .radovi:hover img {
+        transform: scale(1.2);
+    }
+
+    .radovi img {
+        width: 100%;
+        position: relative;
+        top: 0;
+        left: 0;
+        z-index: 6;
+        transition: all 1s;
+    }
+
+    .radovi div {
+        position: absolute;
+        background: rgba(81, 91, 94, 0.9);
+        font-weight: bold;
+        left: 0;
+        top: 0;
+        padding: 32px 5px 0 11px;
+        width: 100%;
+        height: 100%;
+        text-align: center;
+        transform: scale(0);
+        transition: all .6s;
+        opacity: 0;
+        z-index: 10;
+    }
+
+
+    .radovi div h3 {
+        color: #FFFFFF;
+        font-size: 18px;
+        margin-top: 20%;
+        padding-bottom: 10px;
+        text-transform: uppercase;
+    }
+
+    .radovi div span {
+        color: #fff;
+        font-size: 15px;
+        font-weight: 300;
+        text-transform: uppercase;
+    }
+
+.blok-button {
+    display: flex;
+    justify-content: center;
+    margin:  0px;
+    background-color: #2C3234;
+}
+
+    .blok-button a {
+        color: white;
+    }
+
+    .blok-button div {
+        padding: 10px 25px;
+    }
+                                    /*  Galerija */
+#galerija {
+    background-color: #454a4d;
+}
+
+.galerija-heading {
+    font-size: 45px;
+    color: aliceblue;
+    text-align: center;
+    padding-top: 150px;
+    margin-bottom: 100px;
+   
+    position: relative;
+    animation-name: gore;
+    animation-duration: 0.7s;
+}
+
+.box-display {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    gap: 32px;
+    padding-bottom: 100px;
+}
+
+.grid-item {
+    background-color: white;
+    border-radius: 5px;
+    overflow: hidden;
+    box-shadow: 0 48px 96px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+    transition: 0.2s;
+}
+
+    .grid-item:hover {
+        transform: translateY(-1%);
+        box-shadow: 0 64px 128px rgba(0, 0, 0, 0.5);
+    }
+
+.box {
+    background: white;
+    border-radius: 8px;
+}
+
+.box-slika {
+    display: block;
+    width: 100%;
+}
+
+.box-content {
+    padding: 30px;
+}
+
+.box-heading {
+    font-size: 22px;
+    font-weight: 500;
+    color: #2C3234;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.gallery-btn {
+    width: 100%;
+    display: block;
+    padding: 12px;
+    font-size: 16px;
+    color: white;
+    background-color: #E7772E;
+    border: none;
+    border-radius: 4px;
+    transition: 0.2s;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+
+    .gallery-btn:hover, .gallery-btn:active {
+        background-color: #2C3234;
+    }
+                                              /* Kontakt */
+#kontakt {
+    background-image: linear-gradient(rgba(0,0,0,0.2), black),url(../img/bg4.jpg);
+    height: 93vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.kontakt-heading {
+    text-align: center;
+    font-size: 50px;
+    padding-top: 150px;
+    color: #fff;
+    letter-spacing: 2px;
+}
+
+.kontakt-holder {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+    gap: 200px;
+}
+
+input:not([type=submit]), textarea {
+    width: 100% !important;
+    height: 50px;
+    margin-bottom: 25px;
+    padding: 0 15px 2px;
+    border-radius: 6px;
+    background: #fff;
+}
+
+textarea {
+    max-width: 100%;
+    min-height: 150px;
+    padding: 15px;
+}
+
+.submit {
+    font-size: 18px;
+    position: relative;
+    width: 190px;
+    height: 44px;
+    margin-bottom: 32px;
+    padding: 0;
+    cursor: pointer;
+    vertical-align: top;
+    float: right;
+    background-color: #E7772E;
+    color: white;
+    letter-spacing: 1px;
+}
+
+#map-holder {
+    animation-name: levo;
+    animation-duration: 1.5s;
+    
+}
+
+.form {
+    animation-name: desno;
+    animation-duration: 1.5s;
+    
+}
+                      /* O autoru */
+
+#sekcija-o-autoru {
+    height: 900px;
+    background-color: #2C3234;
+    padding-top: 200px;
+   
+}
+
+.blok-o-autoru {
+    display: flex;
+    justify-content: space-between;
+    width: 60%;
+    margin: 0 auto;
+    gap: 150px;
+}
+
+.slika-o-nama {
+    animation-name: levo;
+    animation-duration: 1.5s;
+    position: relative;
+}
+
+.autor-sadrzaj {
+    animation-name: desno;
+    animation-duration: 1.5s;
+    position: relative;
+}
+
+.slika-o-nama img {
+    height: 80%;
+    border-radius: 5px;
+    border: 4px solid #E7772E;
+}
+
+.autor-sadrzaj h3 {
+    font-size: 35px;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color:#fff;
+}
+
+.autor-sadrzaj p {
+    font-size: 20px;
+    line-height: 1.7;
+    color: #fff;
+}
+
+.autor-underline {
+    width: 170px;
+    margin-bottom: 20px;
+}
+                                        /*  FOOTER */
+
+footer {
+    background-color: #515b5e;
+    padding: 20px 20px;
+    margin-bottom:0px;
+   
+    
+}
+
+    footer .footer-blok {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+    }
+
+        footer .footer-blok div {
+            color: white;
+        }
+
+    footer a {
+        color: white;
+    }
+
+    footer i {
+        font-size: 25px;
+        margin-left: 20px;
+    }
+
+#footer-p {
+    font-size: 16px;
+}
+
+
+/*Animacije */
+
+@keyframes levo {
+    from {
+        left: -100%;
+    }
+
+    to {
+        left: 0px;
+    }
+}
+
+@keyframes desno {
+    from {
+        right: -100%;
+    }
+
+    to {
+        right: 0px;
+    }
+}
+
+@keyframes gore {
+    from {
+        top: -300px;
+    }
+
+    to {
+        top: 0px;
+    }
+}
